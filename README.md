@@ -17,6 +17,6 @@ This project performs a computational analysis of gender representation in Holly
 
 ## Installation
 ```bash
-git clone https://github.com/<your-username>/gendered-trailers-analysis.git
+git clone https://github.com/Medahmedou99/gendered-trailers-analysis.git
 cd gendered-trailers-analysis
 pip install -r requirements.txt
