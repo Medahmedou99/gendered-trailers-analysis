@@ -3,8 +3,8 @@ import pandas as pd
 import yt_dlp
 
 genres = ['action', 'adventure', 'comedy', 'crime', 'drama', 'fantasy', 'horror', 'romance']
-csv_folder = r"C:/Users/medma/Desktop/gender_trailersID"
-download_root = r"C:/Users/medma/Desktop/gender_trailers"
+csv_folder = "gender_trailersID"
+download_root = "gender_trailers"
 
 os.makedirs(download_root, exist_ok=True)
 
@@ -40,3 +40,4 @@ for genre in genres:
             print(f"Downloaded: {video_id}")
         except yt_dlp.utils.DownloadError as e:
             print(f"Error downloading {video_id}: {e}")
+
