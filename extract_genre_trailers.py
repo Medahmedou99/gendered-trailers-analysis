@@ -2,8 +2,8 @@ import json
 import csv
 import os
 
-file_path = r"C:/Users/medma/Desktop/metadata.json"
-output_folder = r"C:/Users/medma/Desktop/gender_trailersID"
+file_path = "metadata.json"
+output_folder = "gender_trailersID"
 
 os.makedirs(output_folder, exist_ok=True)
 
@@ -42,3 +42,4 @@ for genre, ids in genre_to_ids.items():
         for yt_id in ids:
             writer.writerow([yt_id])
     print(f"Saved {len(ids)} IDs to {filename}")
+
